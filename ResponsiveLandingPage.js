@@ -1,15 +1,16 @@
 // Change nav style on scroll
 window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        navbar.style.backgroundColor = '#555';
+    if (window.scrollY > 80) {
+        navbar.style.backgroundColor = '#f2f2f2';
     } else {
-        navbar.style.backgroundColor = '#333';
+        navbar.style.backgroundColor = '#fff';
     }
 });
 
+
 // Change link color on hover
-const links = document.querySelectorAll('nav ul li a');
+const links = document.querySelectorAll('div ul li a');
 links.forEach(link => {
     link.addEventListener('mouseenter', () => {
         link.style.color = '#f90';
